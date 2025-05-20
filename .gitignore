@@ -1,0 +1,24 @@
+# Composer dependencies
+/vendor/
+
+# Arquivo de ambiente local
+.env
+
+# Arquivos de log
+*.log
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# IDEs e editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Arquivos temporários do PHP
+*.php~
+
+# Cache e uploads temporários
+/tmp/

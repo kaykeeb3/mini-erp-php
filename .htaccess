@@ -1,0 +1,12 @@
+# Ativa o mecanismo de reescrita de URLs
+RewriteEngine On
+
+# Define a base do projeto
+RewriteBase /api/
+
+# Se o arquivo ou diretório existir, serve normalmente
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redireciona todas as outras requisições para index.php
+RewriteRule ^(.*)$ index.php [QSA,L]
