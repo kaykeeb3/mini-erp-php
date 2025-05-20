@@ -21,7 +21,12 @@ Este projeto é um mini ERP desenvolvido em **PHP puro**, utilizando o padrão *
    cd mini-erp-php
    ```
 
-2. Configure seu banco de dados e credenciais de e-mail no arquivo `.env`:
+2. Instale as dependências do projeto usando o Composer:
+   ```bash
+   composer install
+   ```
+
+3. Configure seu banco de dados e credenciais de e-mail no arquivo `.env`:
 
    ```
    DB_HOST=localhost
@@ -38,15 +43,15 @@ Este projeto é um mini ERP desenvolvido em **PHP puro**, utilizando o padrão *
    MAIL_FROM_NAME="Mini ERP"
    ```
 
-3. Execute o script SQL para criar as tabelas (em `database/schema.sql`).
+4. Execute o script SQL para criar as tabelas (em `database/schema.sql`).
 
-4. Inicie o servidor embutido do PHP:
+5. Inicie o servidor embutido do PHP:
 
    ```bash
    php -S localhost:8000 -t public
    ```
 
-5. Acesse o sistema no navegador ou teste via Postman/Insomnia:
+6. Acesse o sistema no navegador ou teste via Postman/Insomnia:
 
    ```
    http://localhost:8000
